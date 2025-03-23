@@ -16,10 +16,9 @@ std::string captureStdout(const char *command) {
     return result;
 }
 
-// Test case to check if masterSoftware prints the expected message
-TEST(MasterSoftwareTest, PrintTest) {
-    std::string output = captureStdout("./masterSoftware");
-    EXPECT_EQ(output, "Hello from Master Software\n");
+TEST(Submodule1Test, PrintTest) {
+    std::string output = captureStdout("./submodule1");
+    EXPECT_EQ(output, "Hello from submodule1\n");
 }
 
 // Main function for Google Test
